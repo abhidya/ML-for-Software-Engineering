@@ -1,4 +1,4 @@
-from blackbox_ssh import BlackBox
+from blackbox import BlackBox
 
 EXAMPLE_SQL_QUERY = "SELECT * FROM source_histories LIMIT 10;"
 
