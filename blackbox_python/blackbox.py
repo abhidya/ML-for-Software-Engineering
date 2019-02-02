@@ -42,6 +42,3 @@ class BlackBox:
         self.query(query).to_csv(save_path)
         print("Saved results of the query '{}' to {}.".format(query, save_path))
 
-if __name__ == '__main__':
-    with BlackBox() as bb:
-        bb.command_line()
