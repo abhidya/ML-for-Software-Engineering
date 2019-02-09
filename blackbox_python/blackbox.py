@@ -36,9 +36,26 @@ class BlackBox:
         self.mysql_connection.close()
         self.ssh_server.stop()
 
-    def query(self, query):
+    def check_initialized(self):
         if self.mysql_connection is None:
             raise ValueError("Use with statement to initialize this class.")
+        return
+
+    def table_sizes(self):
+        table_size_query = '''
+        SELECT
+            TABLE_NAME AS `Table`,
+            ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
+        FROM
+            information_schema.TABLES
+        ORDER BY
+            (DATA_LENGTH + INDEX_LENGTH)
+        DESC;
+        '''
+        return self.query(table_size_query)
+
+    def query(self, query):
+        self.check_initialized()
         return pd.read_sql_query(query, self.mysql_connection)
 
     def save_query_csv(self, query, save_path):
@@ -123,3 +140,4 @@ if __name__ == '__main__':
         coll.insert_one(history.__dict__)
 
     
+

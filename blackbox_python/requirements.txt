@@ -1,4 +1,5 @@
 paramiko
+pymysql
 sshtunnel
 numpy
 pandas
