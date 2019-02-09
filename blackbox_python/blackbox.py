@@ -1,6 +1,8 @@
 import pymysql
 import pandas as pd
 from sshtunnel import SSHTunnelForwarder
+import json
+from enum import Enum
 
 sql_hostname = 'localhost'
 sql_username = 'whitebox'
@@ -11,6 +13,7 @@ ssh_host = 'white.bluej.org'
 ssh_user = 'azh'
 ssh_port = 22
 sql_ip = '1.1.1.1.1'
+
 
 class BlackBox:
     def __init__(self, database=sql_main_database):
@@ -39,6 +42,84 @@ class BlackBox:
         return pd.read_sql_query(query, self.mysql_connection)
 
     def save_query_csv(self, query, save_path):
-        self.query(query).to_csv(save_path)
+        self.query(query).to_csv(save_path, index=False)
         print("Saved results of the query '{}' to {}.".format(query, save_path))
 
+    def source_histories(self, n=10000, sort_descending_length=True):
+        q = "SELECT * FROM source_histories WHERE (source_history_type='complete' OR source_history_type='diff') LIMIT {};".format(
+            n)
+        source_histories_df = self.query(q.format(n))
+        source_histories = []
+
+        def get_source_history(source_file_id):
+            for history in source_histories:
+                if history.source_file_id == source_file_id:
+                    return history
+            return None
+
+        for i, row in source_histories_df.iterrows():
+            source_history = get_source_history(row["source_file_id"])
+            if source_history is None:
+                source_history = SourceFileHistory(row["source_file_id"])
+                source_histories.append(source_history)
+            source_history.parse_row(row)
+
+        if sort_descending_length:
+            return sorted(source_histories, key=lambda x: len(x), reverse=True)
+
+        return source_histories
+
+
+class SourceHistoryType(Enum):
+    COMPLETE = "complete"
+    DIFF = "diff"
+
+
+class SourceFileHistory:
+    def __init__(self, source_file_id):
+        self.source_file_id = source_file_id
+        self.contents = {}
+        self.diffs = {}
+
+    def parse_row(self, source_histories_row):
+        try:
+            source_history_type = SourceHistoryType(source_histories_row["source_history_type"])
+
+            if source_history_type == SourceHistoryType.COMPLETE:
+                self.contents[str(source_histories_row['id'])] = {
+                    "content": source_histories_row["content"],
+                    "event_id": source_histories_row["master_event_id"],
+                    "source_histories_id": source_histories_row["id"]
+                }
+            elif source_history_type == SourceHistoryType.DIFF:
+                self.diffs[str(source_histories_row['id'])] = {
+                    "content": source_histories_row["content"],
+                    "event_id": source_histories_row["master_event_id"],
+                    "source_histories_id": source_histories_row["id"]
+                }
+        except ValueError:
+            from sys import exit
+            print("SourceFileHistory only handles 'complete' and 'diff' source_history_type's")
+            exit(1)
+
+    def __str__(self):
+        return json.dumps(self.contents)
+
+    def __len__(self):
+        return len(self.contents.keys()) + len(self.diffs.keys())
+
+
+
+
+if __name__ == '__main__':
+    from pymongo import MongoClient
+    mongo = MongoClient()
+    db = mongo.blackbox
+    coll = db.source_histories
+    with BlackBox() as bb:
+        source_histories = bb.source_histories(n=500)
+
+    for history in source_histories:
+        coll.insert_one(history.__dict__)
+
+    
