@@ -20,7 +20,7 @@ This will start a daemon process. While this is running, run
 
 You only need to run the driver once! This will install all the different language drivers that can be used for creating universal abstract syntax trees. 
 
-#Regular Usage
+# Regular Usage
 
 Make sure you have `./bblfsh_client.sh` running. 
 
