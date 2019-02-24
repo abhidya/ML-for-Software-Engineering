@@ -2,7 +2,7 @@
 
 BabelFish is an open source package that can be used to convert any language's source code into a universal abstract syntax tree. This tree will be used with the ast2vec package. [The homepage can be found here](https://doc.bblf.sh/).
 
-#Getting Started
+# Getting Started
 
 In this directory you will find two shell scripts. You may need to install docker if you don't already have it in order for them to work. [You can find Docker here](https://docs.docker.com/install/). 
 
