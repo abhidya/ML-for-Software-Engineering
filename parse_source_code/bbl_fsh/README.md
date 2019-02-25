@@ -12,7 +12,7 @@ Once you have that installed, first run
 ./bblfsh_client.sh
 ```
 
-This will start a daemon process. While this is running, run 
+This will start a daemon process. This process should persist in the background so it is unlikely you will need to run it more than once. Next, run 
 
 ```
 ./bblfsh_driver.sh
@@ -22,18 +22,18 @@ You only need to run the driver once! This will install all the different langua
 
 # Regular Usage
 
-Make sure you have `./bblfsh_client.sh` running. 
+Make sure the daemon process from `./bblfsh_client.sh` is running. You can check all docker processes that are running by typing `docker ps -a`. 
 
 To test something out, go ahead and run 
 
 ```
-python3 ast.py parseDate.py 
+python3 uast.py parseDate.py 
 ```
 
 or 
 
 ```
-python3 ast.py Factorial.java
+python3 uast.py Factorial.java
 ```
 
 Running either one of these will print out the universal abstract syntax tree.   
