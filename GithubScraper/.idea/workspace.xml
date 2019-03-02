@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="61e152bd-0bbd-48e9-82cf-424d47e430f0" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/GithubScraper$scratch_16.coverage" NAME="scratch_16 Coverage Results" MODIFIED="1549043010311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/GithubScraper$transformer.coverage" NAME="transformer Coverage Results" MODIFIED="1549637717150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GithubScraper$scraper.coverage" NAME="scraper Coverage Results" MODIFIED="1548170110310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GithubScraper$nuerosky.coverage" NAME="nuerosky Coverage Results" MODIFIED="1549243577780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/java_code_files" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_16.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/javalang/tokenizer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7455">
+              <caret line="501" column="26" selection-start-line="501" selection-start-column="26" selection-end-line="519" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transformer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2520">
+              <caret line="173" selection-start-line="173" selection-end-line="173" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transform java to df.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GithubScraper.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Promise.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Untitled1.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>https://github.com/iluwatar/java-design-patterns</find>
+      <find>print</find>
+      <find>ClassDeclaration</find>
+      <find>bin_power</find>
+      <find>for</find>
+      <find>line</find>
+      <find>location</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/temp/transformer.py" />
+        <option value="$PROJECT_DIR$/scraper.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_16.py" />
+        <option value="$PROJECT_DIR$/java_code_files/nuerosky.py" />
+        <option value="$PROJECT_DIR$/Untitled.ipynb" />
+        <option value="$PROJECT_DIR$/transformer.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="748" />
+    <option name="y" value="27" />
+    <option name="width" value="917" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="GithubScraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GithubScraper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GithubScraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GithubScraper" type="462c0819:PsiDirectoryNode" />
+              <item name=".ipynb_checkpoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GithubScraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ml4se-master/blackbox_python" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.transformer">
+    <configuration name="nuerosky" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GithubScraper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/java_code_files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/java_code_files/nuerosky.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scraper" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GithubScraper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_16" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GithubScraper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_16.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="transformer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GithubScraper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/transformer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.transformer" />
+        <item itemvalue="Python.nuerosky" />
+        <item itemvalue="Python.scratch_16" />
+        <item itemvalue="Python.scraper" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61e152bd-0bbd-48e9-82cf-424d47e430f0" name="Default Changelist" comment="" />
+      <created>1547767086321</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547767086321</updated>
+      <workItem from="1547767087720" duration="3618000" />
+      <workItem from="1547793768735" duration="2265000" />
+      <workItem from="1547830312646" duration="10613000" />
+      <workItem from="1548098440534" duration="5000" />
+      <workItem from="1548098724143" duration="599000" />
+      <workItem from="1548166501600" duration="4345000" />
+      <workItem from="1548171194910" duration="69000" />
+      <workItem from="1548185942657" duration="55000" />
+      <workItem from="1548190384390" duration="30000" />
+      <workItem from="1548190560020" duration="3000" />
+      <workItem from="1548335878076" duration="24000" />
+      <workItem from="1548439173856" duration="814000" />
+      <workItem from="1548622623442" duration="11000" />
+      <workItem from="1549038894667" duration="5017000" />
+      <workItem from="1549240191094" duration="2367000" />
+      <workItem from="1549250187538" duration="2000" />
+      <workItem from="1549314803783" duration="453000" />
+      <workItem from="1549637321294" duration="2515000" />
+      <workItem from="1549812595064" duration="2891000" />
+      <workItem from="1549897555396" duration="373000" />
+      <workItem from="1549907495520" duration="928000" />
+      <workItem from="1549919206487" duration="866000" />
+      <workItem from="1549938694023" duration="214000" />
+      <workItem from="1549939524796" duration="600000" />
+      <workItem from="1550511762920" duration="16000" />
+    </task>
+    <task id="LOCAL-00001" summary="fixed some messed up text that moved around">
+      <created>1547794078160</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547794078160</updated>
+    </task>
+    <task id="LOCAL-00002" summary="scrapes the top 100 github java repo links">
+      <created>1547795154659</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547795154659</updated>
+    </task>
+    <task id="LOCAL-00003" summary="scrapes the top 100 github java repo links">
+      <created>1548049875046</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548049875046</updated>
+    </task>
+    <task id="LOCAL-00004" summary="scrapes the top 100 github java repo links">
+      <created>1548049941678</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548049941678</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added some java code, and some preliminary code to transform into code blocks">
+      <created>1548055373102</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1548055373102</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated transformer">
+      <created>1548169589542</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1548169589542</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added promise database and added code to download and extract github sc">
+      <created>1549048796479</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1549048796479</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added promise database and added code to download and extract github sc">
+      <created>1549907706667</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1549907706667</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added promise database and added code to download and extract github sc">
+      <created>1549907843369</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1549907843369</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added compressed github repo datafiles with duplicates and duplicate AST's removed">
+      <created>1549938776026</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1549938776026</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="38693000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="927" height="1053" extended-state="4" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25312147" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49860334" weight="0.4049676" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4287257" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49301675" weight="0.32937366" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50139666" side_tool="true" weight="0.40712744" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49943247" weight="0.32937366" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49943247" weight="0.32937366" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32937366" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="PlantUML" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.75835866" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/temp/Android-CleanArchitecture" />
+      <path value="$PROJECT_DIR$/temp/EventBus" />
+      <path value="$PROJECT_DIR$/temp/ExoPlayer" />
+      <path value="$PROJECT_DIR$/temp/JCSprout" />
+      <path value="$PROJECT_DIR$/temp/JavaGuide" />
+      <path value="$PROJECT_DIR$/temp/MPAndroidChart" />
+      <path value="$PROJECT_DIR$/temp/RxJava" />
+      <path value="$PROJECT_DIR$/temp/bytecode-viewer" />
+      <path value="$PROJECT_DIR$/temp/elasticsearch" />
+      <path value="$PROJECT_DIR$/temp/fastjson" />
+      <path value="$PROJECT_DIR$/temp/guava" />
+      <path value="$PROJECT_DIR$/temp/incubator-dubbo" />
+      <path value="$PROJECT_DIR$/temp/interviews" />
+      <path value="$PROJECT_DIR$/temp/jadx" />
+      <path value="$PROJECT_DIR$/temp/java-design-patterns" />
+      <path value="$PROJECT_DIR$/temp/java8-tutorial" />
+      <path value="$PROJECT_DIR$/temp/jenkins" />
+      <path value="$PROJECT_DIR$/temp/leakcanary" />
+      <path value="$PROJECT_DIR$/temp/libgdx" />
+      <path value="$PROJECT_DIR$/temp/logger" />
+      <path value="$PROJECT_DIR$/temp/okhttp" />
+      <path value="$PROJECT_DIR$/temp/realm-java" />
+      <path value="$PROJECT_DIR$/temp/retrofit" />
+      <path value="$PROJECT_DIR$/temp/spring-boot" />
+      <path value="$PROJECT_DIR$/temp/zxing" />
+      <path value="$PROJECT_DIR$/temp/BottomBar" />
+      <path value="$PROJECT_DIR$/temp/HikariCP" />
+      <path value="$PROJECT_DIR$/temp/MaterialViewPager" />
+      <path value="$PROJECT_DIR$/temp/PermissionsDispatcher" />
+      <path value="$PROJECT_DIR$/temp/arthas" />
+      <path value="$PROJECT_DIR$/temp/auto" />
+      <path value="$PROJECT_DIR$/temp/glide-transformations" />
+      <path value="$PROJECT_DIR$/temp/guice" />
+      <path value="$PROJECT_DIR$/temp/lombok" />
+      <path value="$PROJECT_DIR$/temp/mockito" />
+      <path value="$PROJECT_DIR$/temp/mybatis-3" />
+      <path value="$PROJECT_DIR$/temp/pinpoint" />
+      <path value="$PROJECT_DIR$/temp/presto" />
+      <path value="$PROJECT_DIR$/temp/recyclerview-animators" />
+      <path value="$PROJECT_DIR$/temp/spark" />
+      <path value="$PROJECT_DIR$/temp/symphony" />
+      <path value="$PROJECT_DIR$/temp/uCrop" />
+      <path value="$PROJECT_DIR$/temp/vert.x" />
+      <path value="$PROJECT_DIR$/temp/webmagic" />
+    </ignored-roots>
+    <MESSAGE value="fixed some messed up text that moved around" />
+    <MESSAGE value="scrapes the top 100 github java repo links" />
+    <MESSAGE value="added some java code, and some preliminary code to transform into code blocks" />
+    <MESSAGE value="updated transformer" />
+    <MESSAGE value="added promise database and added code to download and extract github sc" />
+    <MESSAGE value="added compressed github repo datafiles with duplicates and duplicate AST's removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="added compressed github repo datafiles with duplicates and duplicate AST's removed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scraper.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scraper.py</url>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/posixpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/shutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="561" column="25" lean-forward="true" selection-start-line="561" selection-start-column="25" selection-end-line="561" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java_code_files/bytecode-viewer/AbstractInsnNode.java" />
+    <entry file="file://$PROJECT_DIR$/scraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1151-commits-labeled-with-maintenance-activities.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3330">
+          <caret line="224" selection-start-line="224" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Untitled.ipynb" />
+    <entry file="file://$PROJECT_DIR$/java_code_files/nuerosky.py" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_16.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/javalang/tokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7455">
+          <caret line="501" column="26" selection-start-line="501" selection-start-column="26" selection-end-line="519" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transformer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transform java to df.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GithubScraper.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Promise.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Untitled1.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="3" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
