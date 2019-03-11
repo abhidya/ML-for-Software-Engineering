@@ -1,0 +1,3 @@
+z = Integer.parseInt(x + "" + y);
+// or
+z = pow(10, ceil(log10(y))) * x + y

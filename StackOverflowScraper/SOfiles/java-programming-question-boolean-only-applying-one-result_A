@@ -1,0 +1,1 @@
+int i = new Scanner(System.in).nextInt();

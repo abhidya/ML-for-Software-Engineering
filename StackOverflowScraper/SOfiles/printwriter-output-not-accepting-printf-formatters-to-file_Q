@@ -1,0 +1,55 @@
+import java.util.Scanner;
+import java.io.*;
+public class BarakProductOrder
+{
+    public static void main(String[] args) throws IOException
+    {
+        //Establish scanner object
+        Scanner input = new Scanner (System.in);
+
+        //Declare variables
+        String name, product, street, city, state, zip;
+        int qty;
+        double price;
+
+        //Collect data
+        System.out.println("Welcome to Matt's Dog Food Emporium!\n\nWhat is your name?");
+        name = input.nextLine();
+
+        System.out.println("Which product would you like to order today?");
+        product = input.nextLine();
+
+        System.out.println("How many would you like?");
+        qty = input.nextInt();
+        price = 4.56*qty;
+
+        input.nextLine(); //Must be placed to not skip over "address" line
+
+        System.out.println("Enter your street address:");
+        street = input.nextLine();
+
+        System.out.println("Enter the City:");
+        city = input.nextLine();
+        System.out.println("Enter the State (ex.: NY):");
+        state = input.nextLine();
+        System.out.println("Enter the Zip:");
+        zip = input.nextLine();
+
+        System.out.println("Thank you for your order, " + name);
+
+        //Output data to file "BarakOrder.txt"
+        PrintWriter outputFile = new PrintWriter("C:\\Users\\fbara\\Desktop\\CISS 110\\BarakOrder.txt");
+        outputFile.println("Order Number: 001");
+        outputFile.println("Product: " + product);
+        outputFile.println("Quantity: " + qty);
+        outputFile.printf("Price = 4.56*" + qty + " = $" + "%.2f" + price);
+        outputFile.println("Customer Contact Info: " + name);
+        outputFile.println("Address: " + street);
+        outputFile.println(city + ", " + state + " " + zip);
+
+        //Close scanner and file object
+        input.close();
+        outputFile.close();
+        System.out.println("Data has been written.");
+    }
+}

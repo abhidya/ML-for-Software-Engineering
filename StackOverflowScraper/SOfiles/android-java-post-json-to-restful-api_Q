@@ -1,0 +1,24 @@
+    public static JSONObject postJsonArray(String url,JSONArray jsonArrayToPost){
+    System.out.println("Send request POST to address:"+url);
+    JSONObject jsonObject=null;
+    HttpClient httpclient = (new Connection()).getNewHttpClient();
+    StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+    StrictMode.setThreadPolicy(policy);
+    HttpPost request = new HttpPost(url);
+    try {
+        StringEntity s = new StringEntity(jsonArrayToPost.toString());
+        request.setEntity(s);
+        request.setHeader("Accept", "application/json");
+        request.setHeader("Accept-language", "it-IT");
+        request.setHeader("Content-type", "application/json");
+        HttpResponse result = httpclient.execute(request);
+        String finalResult = EntityUtils.toString(result.getEntity());
+        httpclient.getConnectionManager().shutdown();
+        System.out.println(finalResult);
+        jsonObject=new JSONObject(finalResult);
+        return jsonObject;
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return jsonObject;
+}

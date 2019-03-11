@@ -8,7 +8,7 @@ dirname = os.path.abspath(os.path.dirname('__file__'))
 dirname = dirname + '/../StackOverflowScraper/SOfiles'
 stackoverflow = 'http://stackoverflow.com'
 browser = RoboBrowser(parser='html.parser')
-Name_Code = {} #key is name of webpage, value is Code
+Name_Code = {} #key is name of webpage, value[0] is Code, value[1] is label
 Code = []
 
 def get_name(s):
@@ -57,9 +57,9 @@ def get_buggy_code():
             if len(code_blocks) is 1:
                 for code_block in code_blocks:
                     code = code_block.find('code')
-                    code = str(code)
-                    code = code[6:]
-                    code = code[:-7]
+                    code = str(code.text)
+                    #code = code[6:]
+                    #code = code[:-7]
                     print(code)
                     Code.append(code)
                     Code.append("buggy")
@@ -111,9 +111,9 @@ def get_good_code():
                 if len(code_blocks) is 1:
                     for code_block in code_blocks:
                         code = code_block.find('code')
-                        code = str(code)
-                        code = code[6:]
-                        code = code[:-7]
+                        code = str(code.text)
+                        #code = code[6:]
+                        #code = code[:-7]
                         print(code)
                         Code.append(code)
                         Code.append("good")
@@ -129,6 +129,6 @@ def main():
     get_good_code()
     for key, value in Name_Code.items():
         with open(dirname + '/' + key, 'w') as f:
-            f.write(key)
+            f.write(value[0])
     return Name_Code
 
