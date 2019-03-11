@@ -44,15 +44,15 @@ def upload_entry():
                 print(codeblock)
                 result = x.predict_text_main(data)
                 if result == "c":
-                    bug = "corrective"
+                    bug = "Semantic Bug"
                 elif result == "p":
-                    bug = "perfective"
+                    bug = "Perfective Refactor Possible"
                 elif result == "a":
-                    bug = "adaptive"
+                    bug = "Adaptive Refactor Possible"
                 else:
                     bug = result
                 try:
-                    line =   bug + " bug in CodeBlock at Line " + str(codeblock._position.line) + " Column " + str(codeblock._position.column) + " \n"
+                    line =   bug + "CodeBlock at Line " + str(codeblock._position.line) + " Column " + str(codeblock._position.column) + " \n"
                     if bug == "Correct":
                         line = bug + " CodeBlock OK at Line " + str(codeblock._position.line) + " Column " + str(codeblock._position.column) + " \n"
 
@@ -71,13 +71,13 @@ def upload_entry():
         try:
             message.append(str(e.__class__.__name__) + " "+ str(e.description) + " " + str(e.at
                                                                                 ))
-        except (TypeError):
+        except (TypeError, AttributeError):
             try:
                 message.append(str(e.__class__.__name__))
             except (TypeError):
                 pass
             pass
-
+    message = list(set(message))
     code['msg'] = message
     return jsonify(code), 200
 
