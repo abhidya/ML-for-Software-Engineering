@@ -42,7 +42,6 @@ def convert2vec(docs):
     return labels, values
     
 
-
 if __name__ == "__main__":
 
     #usage: py or java
