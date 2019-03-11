@@ -1,0 +1,4 @@
+create or replace and compile java source named hello AS 
+  public class Hello {
+    public static String hello() { return "Hello!"; }
+  };

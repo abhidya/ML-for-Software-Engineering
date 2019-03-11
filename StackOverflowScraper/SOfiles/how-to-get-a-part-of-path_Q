@@ -1,0 +1,20 @@
+public List<String> listFiles(String path, List<File> files) {
+
+    File directory = new File(path);
+
+    File[] fList = directory.listFiles();
+    if (fList != null) {
+        for (File f : fList) {
+            if (f != null && f.isFile()) {
+                files.add(f);
+            } else if (f.isDirectory()) {
+                listFiles(f.getAbsolutePath(), files);
+            }
+        }
+    }
+
+    return files.stream()
+            .filter(file -> file.toString().endsWith(".xml"))
+            .map(File::toString)
+            .collect(Collectors.toList());
+}

@@ -1,0 +1,1 @@
+Arrays.stream(path.split[File.separator]).collect(toSet()).iterator().next().split("-")[0];

@@ -1,0 +1,8 @@
+ //MY TEST CODE  
+ @GetMapping("/health")
+    public DeferredResult<DummyDTO> upNRuning(){        
+        DeferredResult<DummyDTO> defferedResult = new DeferredResult<>();
+        newCachedThreadPool.submit(() ->
+            defferedResult.setResult(new DummyDTO()));
+        return defferedResult;  
+    }

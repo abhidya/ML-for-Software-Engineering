@@ -1,0 +1,1 @@
+outputFile.printf("Price = 4.56*" + qty + " = $" + "%.2f", price);

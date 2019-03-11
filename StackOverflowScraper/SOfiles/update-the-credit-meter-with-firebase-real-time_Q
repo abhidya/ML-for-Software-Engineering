@@ -1,0 +1,151 @@
+public class PageCoins_Activity extends AppCompatActivity implements RewardedVideoAdListener {
+
+private static final String TAG = MainActivity.class.getName();
+private FirebaseAuth mAuth;
+private AdView mBannerTop;
+private AdView mBannerBot;
+private RewardedVideoAd mRewardedVideoAd;
+public double Coins;
+
+
+Button mButton;
+TextView mCoinscounter;
+FirebaseDatabase mDatabase;
+EditText mPhone;
+
+
+
+@Override
+protected void onStart() {
+    super.onStart();
+    updateUI();
+}
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_page_coins_);
+
+    mAuth = FirebaseAuth.getInstance();
+    initFirebase();
+
+    //counter CRD
+    mCoinscounter = (TextView) findViewById(R.id.Textcoins);
+    mButton = (Button) findViewById(R.id.btn2);
+    mPhone=(EditText)findViewById(R.id.NumberOrder);
+
+
+    findViewById(R.id.btn2).setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            if (mRewardedVideoAd.isLoaded()) {
+                mRewardedVideoAd.show();
+            }
+            // Write a message to the database
+            DatabaseReference myRef = mDatabase.getReference();
+            myRef.child("Utenti").child(mPhone.getText().toString()).child("Rapp Coins %").setValue(mCoinscounter.getText().toString());
+        }
+    });
+
+    mRewardedVideoAd = MobileAds.getRewardedVideoAdInstance(this);
+    mRewardedVideoAd.setRewardedVideoAdListener(this);
+
+    //Set Orientation Portrait
+    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+    // Banner Top View Coins
+    mBannerTop = (AdView) findViewById(R.id.adViewTopcoins);
+    AdRequest adRequest = new AdRequest.Builder().setRequestAgent("android_studio:ad_template").build();
+    mBannerTop.loadAd(adRequest);
+
+    // Banner Bot View Coins
+    mBannerBot = (AdView) findViewById(R.id.adViewBotcoins);
+    AdRequest adRequest1 = new AdRequest.Builder().setRequestAgent("android_studio:ad_template").build();
+    mBannerBot.loadAd(adRequest1);
+
+    //ADMob Video
+    loadRewardedVideoAd();
+}
+
+private void initFirebase() {
+    mDatabase = FirebaseDatabase.getInstance();
+}
+
+public void HomeClick(View view){
+    Intent intenthome = new Intent(this, MainActivity.class);
+    finish();
+    startActivity(intenthome);
+}
+
+public void displayCrd (double amount){
+    mCoinscounter.setText(String.format("%.2f", amount));
+}
+
+private void loadRewardedVideoAd() {
+    mRewardedVideoAd.loadAd("ca-app-pub-3940256099942544/5224354917",
+            new AdRequest.Builder().build());
+}
+
+public void logout(View view) {
+    mAuth.signOut();
+    updateUI();
+}
+
+private void updateUI() {
+    FirebaseUser currentuser = mAuth.getCurrentUser();
+    if(currentuser == null){
+        Intent intTologin = new Intent(this, Login_Activity.class);
+        finish();
+        startActivity(intTologin);
+    }
+}
+
+@Override
+public void onRewardedVideoAdLoaded() {
+    Log.d(TAG, "Video Caricato");
+
+}
+
+@Override
+public void onRewardedVideoAdOpened() {
+
+}
+
+@Override
+public void onRewardedVideoStarted() {
+
+}
+
+@Override
+public void onRewardedVideoAdClosed() {
+    loadRewardedVideoAd();
+}
+
+    public void onRewarded(RewardItem rewardItem) {
+    Toast.makeText(this, " RAPp " + " COINS " + " : " + rewardItem.getAmount(), Toast.LENGTH_LONG).show();
+    Coins += rewardItem.getAmount();
+    displayCrd(Coins/40200*100);
+}
+
+@Override
+public void onRewardedVideoAdLeftApplication() {
+
+}
+
+@Override
+public void onRewardedVideoAdFailedToLoad(int i) {
+    Log.d(TAG, "Caricamento Fallito");
+}
+
+@Override
+public void onRewardedVideoCompleted() {
+    loadRewardedVideoAd();
+}
+
+@Override
+protected void onDestroy() {
+    super.onDestroy();
+    // Write a message to the database
+    DatabaseReference myRef = mDatabase.getReference();
+    myRef.child("Utenti").child(mPhone.getText().toString()).child("Rapp Coins %").setValue(mCoinscounter.getText().toString());
+}

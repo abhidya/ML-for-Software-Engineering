@@ -40,7 +40,6 @@ def convert2vec(docs):
         values.append(model.infer_vector(c.words, steps=20))
 
     return labels, values
-    
 
 if __name__ == "__main__":
 

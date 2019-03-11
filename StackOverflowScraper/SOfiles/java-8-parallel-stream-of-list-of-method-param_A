@@ -1,0 +1,3 @@
+list.parallelStream()
+    .map(Collections::singletonList)
+    .forEach(handler::invokList);

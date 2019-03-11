@@ -1,0 +1,12 @@
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    Spinner spinnerOfferType;
+    String[] fromSpinnerElements2 = {"A1", "A2", "A3", "A4"};
+
+    spinnerOfferType = (Spinner)findViewById(R.id.spinnerOfferType);
+    ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+            android.R.layout.simple_spinner_item, fromSpinnerElements2);
+    arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    spinnerOfferType.setAdapter(arrayAdapter);

@@ -1,0 +1,40 @@
+   countDownTimer = new CountDownTimer(oneMin,1000) {
+        @Override
+        public void onTick(final long millisUntilFinished)
+        {
+         /*   long finishedSeconds = oneMin - millisUntilFinished;
+            int total = (int) (((float)finishedSeconds / (float)oneMin) * 100.0);
+            progressBar.setProgress(total);*/
+            progressBar.setMax(100);
+             progress = 1000*60/10;
+progressBar.setProgress(progress);
+
+            }
+
+            @Override
+        public void onFinish() {
+            //t1.setText("");
+            Toast.makeText(getActivity(), "your score", Toast.LENGTH_SHORT).show();
+            dia1();
+
+            progressBar.setProgress(0);
+        }
+    };
+
+    tt2.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            if(ans.equals("1"))
+            {
+                countDownTimer.cancel();
+                mp.start();
+
+
+                Random r = new Random();
+                i1 = r.nextInt(10 - 1) + 1;
+                colorDetails(i1);
+                i++;
+                tt5.setText(String.valueOf("Score:"+i));
+                countDownTimer.start();
+            }

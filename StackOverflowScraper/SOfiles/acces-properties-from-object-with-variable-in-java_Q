@@ -1,0 +1,16 @@
+public class myClass {
+    private Object myObject;
+
+    public myClass() {
+        myObject = new myObjectClass();
+    }
+
+    private class myObjectClass {
+        private int A = 1;
+        private int B = 5;
+    }
+
+    public int getMyObjectValue(String id) {
+        return myObject.[[[[id]]]];
+    }
+}

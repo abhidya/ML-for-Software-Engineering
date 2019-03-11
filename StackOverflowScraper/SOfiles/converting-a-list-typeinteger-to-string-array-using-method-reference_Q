@@ -1,0 +1,4 @@
+     List<Integer> strawberry = IntStream.rangeClosed(1, 100)
+             .boxed().collect(Collectors.toList());
+
+     String[] plum = strawberry.toArray(String[]::new);

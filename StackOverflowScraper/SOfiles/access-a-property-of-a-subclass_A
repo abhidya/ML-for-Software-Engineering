@@ -1,0 +1,9 @@
+else
+{
+  VIPGuest vg;
+  vg = (VIPGuest)g;
+  writer.write(
+    vg.getGuestID() + "," + vg.getFName() + "," + 
+    getLName() + "," + vg.getDateJoin() + "," + 
+    vg.getVIPstartDate() + "," + vg.getVIPexpiryDate());
+}
