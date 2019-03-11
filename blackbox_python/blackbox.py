@@ -13,6 +13,8 @@ ssh_host = 'white.bluej.org'
 ssh_user = 'azh'
 ssh_port = 22
 sql_ip = '1.1.1.1.1'
+pd.set_option('display.expand_frame_repr', False)
+pd.set_option('max_colwidth', 150)
 
 
 class BlackBox:
@@ -65,7 +67,7 @@ class BlackBox:
     def source_histories(self, n=10000, sort_descending_length=True):
         q = "SELECT * FROM source_histories WHERE (source_history_type='complete' OR source_history_type='diff') LIMIT {};".format(
             n)
-        source_histories_df = self.query(q.format(n))
+        source_histories_df = self.query(q)
         source_histories = []
 
         def get_source_history(source_file_id):
@@ -126,8 +128,6 @@ class SourceFileHistory:
         return len(self.contents.keys()) + len(self.diffs.keys())
 
 
-
-
 if __name__ == '__main__':
     from pymongo import MongoClient
     mongo = MongoClient()
@@ -138,6 +138,5 @@ if __name__ == '__main__':
 
     for history in source_histories:
         coll.insert_one(history.__dict__)
-
     
 

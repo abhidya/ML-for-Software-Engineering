@@ -1,7 +1,9 @@
-from blackbox import BlackBox
+import blackbox
 
 EXAMPLE_SQL_QUERY = "SELECT * FROM source_histories LIMIT 10;"
 
-with BlackBox() as bb:
+with blackbox.BlackBox() as bb:
     data = bb.query(EXAMPLE_SQL_QUERY)
-    print(data.head(3))
+    for index, row in data.iterrows():
+        print(row.content)
+        print("NEXT CODE")
