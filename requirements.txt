@@ -1,0 +1,3 @@
+# The offline source-code smoke demo uses only the Python standard library.
+# Archived notebooks/scripts may require pandas, scikit-learn, gensim, scipy,
+# nltk, tqdm, javalang, requests, robobrowser, bblfsh, and jupyter.
